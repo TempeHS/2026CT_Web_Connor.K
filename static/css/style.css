@@ -7,3 +7,6 @@
 .nav-link {
   color: #ffff;
 }
+.carousel-inner img {
+  aspect-ratio: 16/9;
+}
