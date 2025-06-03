@@ -23,7 +23,7 @@
 }
 
 .textcolour {
-  color:#98cdff;
+  color: #98cdff;
 }
 
 /* The progress container (grey background) */
@@ -38,3 +38,4 @@
   height: 8px;
   background: #98cdff;
   width: 0%;
+}
