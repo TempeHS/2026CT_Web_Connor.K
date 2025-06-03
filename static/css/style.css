@@ -5,7 +5,7 @@
   background-color: #10144a;
 }
 .nav-link {
-  color: #ffff;
+  color: #98cdff;
 }
 .carousel-inner img {
   aspect-ratio: 1920/900;
@@ -13,3 +13,28 @@
 .thumb img {
   aspect-ratio: 16/10;
 }
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 100px;
+  z-index: 1;
+  width: 100%;
+  background-color: #10144a;
+}
+
+.textcolour {
+  color:#98cdff;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #10144a;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #98cdff;
+  width: 0%;
