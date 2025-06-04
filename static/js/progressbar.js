@@ -10,4 +10,6 @@ function checkscrolly() {
     document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+  document.getElementById("scrollPercent").textContent =
+    "Progress: " + Math.round(scrolled) + "%";
 }
