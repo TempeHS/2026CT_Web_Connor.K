@@ -12,4 +12,5 @@ function checkscrolly() {
   document.getElementById("myBar").style.width = scrolled + "%";
   document.getElementById("scrollPercent").textContent =
     "Progress: " + Math.round(scrolled) + "%";
+  //"Progress: " + scrolled + "%";
 }
