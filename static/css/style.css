@@ -39,3 +39,9 @@
   background: #98cdff;
   width: 0%;
 }
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+}

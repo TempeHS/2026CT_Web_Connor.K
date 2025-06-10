@@ -1,9 +1,7 @@
-const toastTrigger = document.getElementById("liveToastBtn");
 const toastLiveExample = document.getElementById("liveToast");
 
-if (toastTrigger) {
+function popup() {
   const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
-  toastTrigger.addEventListener("click", () => {
-    toastBootstrap.show();
-  });
+  toastBootstrap.show();
 }
+setInterval(popup, 5000);

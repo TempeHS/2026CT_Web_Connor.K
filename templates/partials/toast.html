@@ -1,9 +1,4 @@
-
-<button type="button" class="btn btn-primary" id="liveToastBtn">
-  Show live toast
-</button>
-
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
+<div class="toast-container bottom-0 end-0 p-3">
   <div
     id="liveToast"
     class="toast"
@@ -12,9 +7,9 @@
     aria-atomic="true"
   >
     <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="..." />
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
+      <img src="static/images/viruslogo.png" class="rounded me-2" alt="..." />
+      <strong class="me-auto">Antivirus 3000X</strong>
+      <small>Now</small>
       <button
         type="button"
         class="btn-close"
@@ -22,6 +17,19 @@
         aria-label="Close"
       ></button>
     </div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+    <!--<div class="toast-body">you computor have 999 virus</div>-->
+    <div class="toast-body">
+      you computor have 999 virus
+      <div class="mt-2 pt-2 border-top">
+        <button type="button" class="btn btn-primary btn-sm">Fix</button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm"
+          data-bs-dismiss="toast"
+        >
+          Fix
+        </button>
+      </div>
+    </div>
   </div>
 </div>
