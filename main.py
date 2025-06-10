@@ -34,5 +34,9 @@ def credits():
 def goodweb():
     return render_template('goodweb.html'),200
 
+@app.route('/login.html')
+def login():
+    return render_template('loginpage.html'),200
+
 if __name__ == '__main__':
     app.run(debug=True)

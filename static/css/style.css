@@ -45,3 +45,15 @@
   right: 20px;
   z-index: 1050;
 }
+.double-1 {
+  background: linear-gradient(currentColor 0 0) bottom 0 left 50% / var(--a, 0)
+      3px no-repeat,
+    linear-gradient(currentColor 0 0) bottom 6px left 50% / var(--b, 0) 3px
+      no-repeat;
+  transition: 0.5s;
+}
+.double-1:hover {
+  --a: 60%;
+  --b: 100%;
+  color: #c0e0ff;
+}
