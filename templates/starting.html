@@ -1,13 +1,16 @@
-{% extends 'layout.html' %} {% block content %}{% include
-'partials/progressbar.html' %}
+{% extends 'layout.html' %} {% block content %}
+<hr />
 <div class="container">
   <div class="row">
     <h1>How to get Started</h1>
   </div>
 </div>
+{% include 'partials/toast.html' %}
 <div class="container">
-  {% include 'partials/toast.html' %}
   <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <img class="page" src="static/images/card5.png" />
+    </div>
     <div class="col-lg-6 col-md-8 col-sm-12">
       <h3>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque

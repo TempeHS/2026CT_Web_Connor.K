@@ -13,10 +13,15 @@
 .thumb img {
   aspect-ratio: 16/10;
 }
+.page {
+  aspect-ratio: 12/16;
+  width: 100%;
+}
 /* Style the header: fixed position (always stay at the top) */
 .header {
   position: fixed;
-  top: 100px;
+  top: 75px;
+  right: 0px;
   z-index: 1;
   width: 100%;
   background-color: #10144a;

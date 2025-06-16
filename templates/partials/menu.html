@@ -1,8 +1,8 @@
 <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid ">
-    <a class="navbar-brand" href="/"><img src="static/images/logo.png" /></a>
+    <a class="navbar-brand col-5" href="/"><img src="static/images/logo.png" /></a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler "
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -46,8 +46,10 @@
         <li class="nav-item">
           <a class="nav-link double-1" href="/login.html">Login</a>
         </li>
+        <hr /> 
+          {% include
+            'partials/progressbar.html' %}
       </ul>
-
     </div>
   </div>
 </nav>
