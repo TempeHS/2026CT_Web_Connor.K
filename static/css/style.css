@@ -4,9 +4,16 @@
 .container-fluid {
   background-color: #10144a;
 }
+.offcanvas {
+  background-color: #10144a;
+}
+.offcanvas.fade.show {
+  background-color: #10144a;
+}
 .nav-link {
   color: #98cdff;
 }
+
 .carousel-inner img {
   aspect-ratio: 1920/900;
 }
