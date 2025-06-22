@@ -23,6 +23,7 @@
 .page {
   aspect-ratio: 12/16;
   width: 100%;
+  float: left;
 }
 /* Style the header: fixed position (always stay at the top) */
 .header {
