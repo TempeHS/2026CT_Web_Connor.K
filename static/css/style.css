@@ -70,3 +70,14 @@
   --b: 100%;
   color: #c0e0ff;
 }
+
+@media (max-width: 767px) {
+  .hiddenmed {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+}
