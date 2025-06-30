@@ -81,3 +81,16 @@
     flex-direction: row !important;
   }
 }
+.logincontainer {
+  color: white;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+.menu {
+  background-color: #10144a;
+}
+body {
+  background-color: #9fb0caa8;
+}

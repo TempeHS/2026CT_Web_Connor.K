@@ -1,22 +1,20 @@
 {% extends 'layout.html' %} {% block content %}
 <style>
   body {
-    background-color: #aeb8c2;
+    background-image: url("static/images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 125% 125%;
+    background-position: center;
   }
 </style>
 <br />
-<div class="container">
+<div class="container logincontainer col-sm-12 col-md-8 col-lg-6">
   <div class="row">
     <h1>Login</h1>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        {% include 'partials/login.html' %}
-      </div>
-
-      <div class="col-lg-6 col-md-8 col-sm-12"></div>
-      {% endblock %}
-    </div>
+    <div class="row">{% include 'partials/login.html' %} {% endblock %}</div>
   </div>
 </div>
+<br />
