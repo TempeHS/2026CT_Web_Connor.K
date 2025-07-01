@@ -11,7 +11,7 @@ def index():
         ("Examples of Good Web Design", "Here are some examples","/goodweb.html","static/images/card2.png"),
         ("Ways You Can Learn", "The Learning Ways","link","static/images/card3.png"),
         ("Ways You Can Learn", "The Learning Ways","link","static/images/card4.png"),
-        ("Flash!", "Oof owie my eyes","link","static/images/card5.png"),
+        ("Flash!", "Oof owie my eyes","/flash.html","static/images/card5.png"),
         ("Ways You Can Learn", "The Learning Ways","link","static/images/card6.png"),
     )
     return render_template("index.html", cards = card_data), 200
@@ -37,6 +37,10 @@ def goodweb():
 @app.route('/login.html')
 def login():
     return render_template('loginpage.html'),200
+
+@app.route('/flash.html')
+def flash():
+    return render_template('flash.html'),200
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -94,3 +94,8 @@
 body {
   background-color: #9fb0caa8;
 }
+@media (max-width: 576px) {
+  .hiddensm {
+    display: none;
+  }
+}
