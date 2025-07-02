@@ -52,12 +52,12 @@
   background: #98cdff;
   width: 0%;
 }
-.toast {
+/* .toast {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1050;
-}
+} */
 .double-1 {
   background: linear-gradient(currentColor 0 0) bottom 0 left 50% / var(--a, 0)
       3px no-repeat,
@@ -96,6 +96,21 @@ body {
 }
 @media (max-width: 576px) {
   .hiddensm {
+    display: none;
+  }
+}
+
+.toast-container .toast:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 767px) {
+  .showmd {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .showmd {
     display: none;
   }
 }
