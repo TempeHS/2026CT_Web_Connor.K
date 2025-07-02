@@ -109,8 +109,44 @@ body {
     display: none;
   }
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .showmd {
     display: none;
   }
+} */
+@media (max-width: 767px) {
+  .showsm {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  .showsm {
+    display: none !important;
+  }
+}
+.alert-container {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  z-index: 1060;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.alert-container .alert {
+  pointer-events: auto;
+  max-width: 100vw;
+  min-width: 100vw;
+}
+.white {
+  color: white !important;
+}
+.gray {
+  color: gray !important;
+}
+.virustoast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
 }

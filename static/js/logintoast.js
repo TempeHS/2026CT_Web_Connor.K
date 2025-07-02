@@ -16,8 +16,9 @@ if (toastTrigger && toastContainer) {
     let minutes = d.getMinutes();
     let seconds = d.getSeconds();
     // Toast HTML
+    let alertHTML = "";
     const toastHTML = `
-      <div class="toast hiddenmed" id="${toastId}" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast hiddenmed " id="${toastId}" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
           
           <strong class="me-auto">Aple</strong>
@@ -40,24 +41,36 @@ if (toastTrigger && toastContainer) {
     newToast.addEventListener("hidden.bs.toast", () => {
       newToast.remove();
     });
-    const alertHTML = `
-      <div class="alert showsm" id="${alertId}" role="alert">
+    if (window.innerWidth <= 767) {
+      let red = Math.random() * 255;
+      let blue = Math.random() * 255;
+      let green = Math.random() * 255;
+      let alertHTML = "";
+      if ((red + blue + green) / 3 < 150) {
+        alertHTML = `
+      <div class="alert showsm white" id="${alertId}" role="alert" style="background-color:rgb(${red}, ${blue}, ${green});">
         Your username or password is incorrect. If you don't have an account, please <a class="alert-link">Sign Up</a> here.
       </div>
     `;
+      } else {
+        alertHTML = `
+      <div class="alert showsm gray" id="${alertId}" role="alert" style="background-color:rgb(${red}, ${blue}, ${green});">
+        Your username or password is incorrect. If you don't have an account, please <a class="alert-link">Sign Up</a> here.
+      </div>
+    `;
+      }
+      // Insert the alert into the container
+      alertContainer.insertAdjacentHTML("beforeend", alertHTML);
 
-    // Insert the alert into the container
-    alertContainer.insertAdjacentHTML("beforeend", alertHTML);
+      // Get the new alert element
+      const newalert = document.getElementById(alertId);
 
-    // Get the new alert element
-    const newalert = document.getElementById(alertId);
-
-    // Optionally, remove the alert from DOM after a timeout (since Bootstrap doesn't auto-hide alerts)
-    setTimeout(() => {
-      newalert.remove();
-    }, 4000); // 4 seconds, adjust as needed
+      // Optionally, remove the alert from DOM after a timeout
+      setTimeout(() => {
+        if (newalert) newalert.remove();
+      }, 4000);
+    }
   });
 }
-{
-  /* <img src="/static/images/viruslogo.png" class="rounded me-2" alt="..." />; */
-}
+
+/* <img src="/static/images/viruslogo.png" class="rounded me-2" alt="..." />; */
